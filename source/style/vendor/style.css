@@ -1,7 +1,299 @@
-h1 {
-  text-decoration: underline overline;
-  color: green; /* scss green should take precedence */
-  font-family: 'Rammetto One', cursive;
-  font-size: 40px;
+.container {
+  width: 1280px;
+  border: 1px solid grey;
+  margin: 0 auto;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Navigation of the top */
+.top-nav ul li a, .top-nav ul li select {
+  font-size: 12px;
+  color: black;
+}
+
+.top-nav ul {
   display: flex;
+  justify-content: flex-end;
+  border-bottom: 1px solid #e4e4e4;
+  margin: 0 auto;
+  padding-right: 50px;
+}
+
+.top-nav ul li, .main-nav ul li {
+  list-style: none;
+  padding: 15px;
+}
+
+.top-nav select, .main-nav select {
+  border: none;
+}
+
+/* Main navigation */
+.main-nav ul {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.main-nav ul li a, .main-nav ul li select {
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.main-nav i::before {
+  font-size: 24px;
+}
+
+.search {
+  flex: 1;
+  text-align: right;
+  margin-right: 50px;
+}
+
+/* Background header */
+.background-header {
+position: relative;
+text-align: center;
+height: 720px;
+}
+
+.background-header img {
+  width: 100%;
+}
+
+h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.top-left-link i::before {
+  font-size: 16px;
+}
+
+.top-left-link a {
+  color:white;
+  position: absolute;
+  top: 27px;
+  left: 50px;
+}
+
+.bottom-left-link {
+  color:white;
+  position: absolute;
+  top: 620px;
+  left: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: left;
+  height: 55px;
+}
+
+.bottom-left-link img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+/* Main contain */
+main {
+  background-color: #f5f5f5;
+}
+
+.main-section {
+  width: 730px;
+  margin: 0 auto;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+section p {
+  text-align: justify;
+}
+
+blockquote {
+  font-size: 24px;
+}
+
+section ul {
+  padding-left: 20px;
+}
+
+.video {
+  margin: 0 auto;
+  padding-top: 40px;
+  width: 880px;
+}
+
+.video + p {
+  width: 710px;
+  margin: 40px auto;
+}
+
+.pic {
+  width: 880px;
+  margin: 0 auto;
+}
+
+.pic img{
+  width: 880px;
+}
+
+article {
+  width: 710px;
+  margin: 40px auto;
+  text-align: justify;
+}
+
+.bottom-nav {
+  width: 710px;
+  margin: 0 auto;
+  padding-bottom: 25px;
+}
+
+.bottom-nav ul{
+  list-style: none;
+  font-size: 12px;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.bottom-nav li {
+  border: 1px solid #000000;
+  border-radius: 2px;
+  margin:4px;
+  padding: 5px 2px;
+}
+
+.bottom-nav li a {
+  padding: 5px 8px;
+  color: #000000;
+}
+
+.bottom-nav li:hover {
+  background-color: blue;
+  color: white;
+}
+
+.bottom-nav li:hover a {
+  color: white;
+}
+
+/* Bottom section */
+.products {
+  width: 1280px;
+  background: #333333;
+}
+
+.box-wraper {
+  padding: 0 10px 60px 10px;
+}
+
+.box {
+  background: white;
+  width: 280px;
+  padding-bottom: 30px;
+}
+
+.box h5, .box p, .box a {
+  width: 240px;
+  padding: 10px 20px;
+  margin: 0;
+}
+
+.box p {
+  margin-bottom: 20px;
+}
+
+.box a {
+  border: 2px solid #000000;
+  border-radius: 2px;
+  margin: 20px;
+  color: black;
+}
+
+h4 {
+  text-align: center;
+  font-size: 36px;
+  color: white;
+}
+
+h5 {
+  font-size: 24px;
+}
+
+.content {
+  margin: 0 auto;
+  display: flex;
+}
+
+/* Contact us */
+.contacts {
+  width: 1180px;
+  height: 246px;
+  margin: 50px auto;
+  background: #6817ff;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.contacts a {
+  color: white;
+  padding: 7px 28px;
+  border: 2px solid white;
+  border-radius: 2px;
+}
+
+.contacts h5, .contacts p, .contacts a {
+  margin: 0;
+  justify-content: space-around;
+}
+
+/* Footer */
+span {
+  font-size: 26px;
+}
+
+footer>div {
+  width: 160px;
+  position: absolute;
+  left: 15px;
+  top: 20px;
+}
+
+footer {
+  width: 1280px;
+  height: 107px;
+  color: blue;
+  background: #000000;
+  display: flex;
+  position: relative;
+}
+
+.footer-nav ul {
+  display: flex;
+  list-style: none;
+  font-size: 14px;
+  justify-content: space-around;
+}
+
+.footer-nav {
+  width: 50%;
+  position: absolute;
+  right: 15px;
 }
