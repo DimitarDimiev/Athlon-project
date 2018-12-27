@@ -2,15 +2,206 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Lorem Ipsum</title>
+  <title>Home page</title>
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+  <link rel="stylesheet" href="style/vendor/style.css">
 </head>
 <body>
-  <div>
-    <h1>Page 2</h1>
-    <p><a href="more-html/page3.html">Page 3</a></p><br />
-    <img src="images/athlon.jpg" alt="Atglon" /><br />
-    <cite>Athlon Static website FE Boilerplate</cite>
+
+  <div class="container">
+    
+    <header>
+
+      <!-- Top nav -->
+      <nav class='top-nav'>
+        <ul>
+          <li>
+            <a href="#">Contact us</a>
+          </li>
+
+          <li>
+            <a href="#">Customer Care</a>
+          </li>
+
+          <li>
+            <a href="#">Careers</a>
+          </li>
+
+          <li>
+            <select>
+              <option value="Regional Sites">Regional Sites</option>
+            </select>
+          </li>
+        </ul>
+      </nav>
+      
+      <!-- Main nav -->
+      <nav class='main-nav'>
+        <ul>
+          <li>
+            <a href="index.html">
+              <img src="C:\Users\Val-PC\Code\Athlon\source\images\clarivate.svg" alt="Logo">
+            </a>
+          </li>
+          
+          <li>
+            <select>
+              <option value="Products">Products</option>
+            </select>
+          </li>
+
+          <li>
+            <select>
+              <option value="Speciality">Speciality</option>
+            </select>
+          </li>
+           
+          <li>
+            <a href="#">Newsroom</a>
+          </li>
+
+          <li>
+            <select>
+              <option value="About">About</option>
+            </select>
+          </li>
+
+          <li>
+            <a href="#">Blog</a>
+          </li>
+
+          <li class="search">
+            <i class="fas fa-search"></i>
+          </li>
+
+        </ul>
+      </nav>
+
+      <div class="background-header-page2">
+      
+        <h1>Sales Enquiries</h1>
+        <p>Please complete this form to help us route your request to the appropriate team.</p>
+        
+        <div class="top-left-link">
+          <a href="#"><i class="fas fa-arrow-left"></i> Contact us</a>
+        </div>
+        
+      </div>
+
+    </header>
+
+    <!-- Main content page 2 -->
+    <main>
+      
+      <form action="/action_page.php">
+        
+        <div class="form-content">
+
+        <div class="form">
+          First name <span class="required">*</span><br>
+          <input type="text" name="first name" required>
+        </div>
+
+        <div class="form">
+          Last name <span class="required">*</span><br>
+          <input type="text" name="last name" required>
+        </div>
+
+        <div class="form">
+          Job role <span class="required">*</span><br>
+          <select>
+            <option value="Select job role">Select job role</option>
+          </select>
+        </div>
+
+        <div class="form">
+          E-mail address <span class="required">*</span><br>
+          <input type="email" name="emailaddress" required>
+        </div>
+
+        <div class="form">
+          Organisation type <span class="required">*</span><br>
+          <select>
+            <option value="Select organisation type">Select organisation type</option>
+          </select>
+        </div>
+
+        <div class="form">
+          Organisation name <span class="required">*</span><br>
+          <input type="text" name="Organisation name" required>
+        </div>
+
+        <div class="form">
+          City <span class="required">*</span><br>
+          <input type="text" name="City" required>
+        </div>
+
+        <div class="form">
+          Select country <span class="required">*</span><br>
+          <select>
+            <option value="Bulgaria">Bulgaria</option>
+          </select>
+        </div>
+
+        <div class="form">
+          State/province <span class="required">*</span><br>
+          <select>
+            <option value="Select State/province">Select State/province</option>
+          </select>
+        </div>
+
+        <div class="form textarea">
+          Request details<br>
+          <textarea name="Request details" id="" cols="52" rows="10"></textarea>
+        </div>
+
+        <div class="recaptcha">
+          <img src="C:\Users\Val-PC\Code\Athlon\source\images\reCAPTCHA.jpg" alt="recaptcha">
+        </div>
+
+        <div class="text">
+          <input type="submit" value="Submit">
+          <div><span>*</span>Denotes required fields</div>
+          <p>We can only answer sales queries via this form. If you need product support please visit our <a href="#">Customer Care</a> page, and for training please visit our <a href="#">Training</a> page.</p>
+          <p><a href="#">Customer Support Center</a></p>
+          <p><a href="#">View our privacy policy</a></p>
+        </div>
+
+      </div>
+      </form>
+    </div>
+    </main>
+  
+    <!-- Footer -->
+    <footer>
+
+        <div class="home-button">
+          <a href="index.html">
+            <span>Clarivate</span><br>Accelerating innovation
+          </a>
+        </div>
+  
+        <div class="footer-nav">
+          <ul>
+            <li>© 2018 Clarivate Analytics</li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Copyright</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Privacy Statement</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+          </ul>
+        </div>
+  
+        <div class="social">
+          <caption class="follow">Follow us:</caption>
+          <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+        </div>
+  
+      </footer>
   </div>
 </body>
 </html>
