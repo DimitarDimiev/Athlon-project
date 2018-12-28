@@ -231,20 +231,31 @@ article {
   display: flex;
   margin: 0;
   padding: 0;
+  flex-wrap: wrap;
 }
 
 .bottom-nav li {
   border: 1px solid #000000;
   border-radius: 2px;
   margin:4px;
-  padding: 5px 2px;
   flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
   text-align: center;
 }
 
 .bottom-nav li a {
-  padding: 5px 8px;
   color: #000000;
+  padding: 0.5em;
+  display: flex;
+  align-items: center;
+  flex-basis: 100%;
+}
+
+li a span {
+  display: block;
+  width: 100%;
+  font-size: 12px;
 }
 
 .bottom-nav li:hover {
