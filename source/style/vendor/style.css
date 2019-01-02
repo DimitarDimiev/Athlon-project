@@ -139,7 +139,6 @@ main {
 .main-section {
   width: 60%;
   margin: 0 10% 0 20%;
-  border: 1px solid red;
 }
 
 .main-section p:first-child {
@@ -161,7 +160,6 @@ section p {
   top: 5%;
   right: 3%;
   height: 100%;
-  border: 1px solid blue;
 }
 
 .social-sticky ul {
@@ -171,6 +169,19 @@ section p {
 
 .social-sticky li {
   list-style: none;
+  margin: 70% 0;
+}
+
+.social-sticky li a {
+  padding: 20%;
+  border:2px solid black;
+  border-radius: 50%;
+  color: black;
+}
+
+.social-sticky .fab {
+  width: 50%;
+  height: 50%;
 }
 
 blockquote {
@@ -253,7 +264,6 @@ article {
 }
 
 li a span {
-  display: block;
   width: 100%;
   font-size: 12px;
 }
@@ -274,23 +284,32 @@ li a span {
 }
 
 .box-wraper {
-  padding: 0 10px 60px 10px;
+  padding: 0 10px 5% 10px;
+  display: flex;
 }
 
 .box {
   background: white;
   width: 280px;
-  padding-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box img {
+  align-self: flex-start;
+}
+
+.box p {
+  flex: 1;
 }
 
 .box h5, .box p, .box a {
-  width: 240px;
   padding: 10px 20px;
   margin: 0;
 }
 
-.box p {
-  margin-bottom: 20px;
+.box h5 {
+  align-self: flex-start;
 }
 
 .box a {
@@ -298,6 +317,7 @@ li a span {
   border-radius: 2px;
   margin: 20px;
   color: black;
+  align-self: flex-start;
 }
 
 h4 {
@@ -310,12 +330,19 @@ h5 {
   font-size: 24px;
 }
 
-.content {
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
+.article {
+  justify-content: space-evenly;
   display: flex;
+  flex-wrap: wrap;
 }
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 
 /* Contact us */
 .contacts {
@@ -323,20 +350,11 @@ h5 {
   height: 246px;
   margin: 5% auto;
   background: #6817ff;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   color: white;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .contacts a {
@@ -348,8 +366,7 @@ h5 {
 
 .contacts h5, .contacts p, .contacts a {
   margin: 0;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 
 /* Footer */
@@ -425,7 +442,8 @@ footer a {
 }
 
 .social a {
-  margin: 0 20px;
+  margin: 0 1%;
+  padding: 1%;
 }
 
 .social a:first-child {
